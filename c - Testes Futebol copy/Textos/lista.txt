@@ -1,0 +1,66 @@
+var nomes = ["nome1", "nome2", "nome3"];
+var lista = document.createElement("ul");
+
+for (var i = 0; i < nomes.length; i++) {
+  var item = document.createElement("li");
+  var checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+
+  checkbox.name = "nome";
+  checkbox.value = nomes[i];
+  item.appendChild(checkbox);
+  item.appendChild(document.createTextNode(nomes[i]));
+  lista.appendChild(item);
+}
+document.body.appendChild(lista);
+
+
+Este código cria uma lista de nomes com checkboxes e adiciona-os ao corpo da página. Quando um checkbox é marcado, você pode gerar a lista de presença usando JavaScript.
+
+
+
+
+const checkbox = document.querySelector('#myCheckbox');
+
+checkbox.addEventListener('click', (event) => {
+  if (event.target.checked) {
+    console.log('Checkbox is checked.');
+  } else {
+    console.log('Checkbox is not checked.');
+  }
+});
+
+
+
+var checkbox = document.querySelector("#checkbox");
+
+function ativarCheckbox(el) {
+    el.checked = true;
+}
+
+ativarCheckbox(checkbox);
+
+
+const ratings = watchList.map(item => ({title: item["Title"],rating: item["imdbRating"]}));
+
+**************************************
+
+Você pode usar o método map dentro de um método de classe em JavaScript. Aqui está um exemplo:
+
+class MyClass {
+  constructor(myArray) {
+    this.myArray = myArray;
+  }
+
+  squareArray() {
+    return this.myArray.map(x => x * x);
+  }
+}
+
+const myInstance = new MyClass([1, 2, 3]);
+
+console.log(myInstance.squareArray()); // [1, 4, 9]
+
+
+
+Neste exemplo, criamos uma classe chamada MyClass que tem um construtor que aceita um array como argumento e o armazena como uma propriedade da instância. A classe também tem um método chamado squareArray que usa o método map para criar e retornar um novo array com os quadrados dos elementos do array original.
