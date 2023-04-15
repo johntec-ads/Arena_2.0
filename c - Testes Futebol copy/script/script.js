@@ -1,82 +1,69 @@
-class Futebol {
-  constructor(atletas, presente) {
-    this.atletas = atletas;
-    this.presente = presente;
+
+
+class Item {
+  constructor(nome, marcado){
+    this.nome = nome;
+    this.marcado = marcado;
   }
 
-  names() {
-
-    let cont = 1;
-
-    for (let i in this.atletas) {
-      let nomes = this.atletas[i].nome
-      let lista = document.createElement("ul");
-      let item = document.createElement("li")
-
-      let checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-
-      let string =
-        document.createTextNode(`${cont.toString().padStart(2, 0)}-${nomes}`);
-      checkbox.name = nomes;
-      checkbox.value = string;
-
-      item.appendChild(checkbox);
-      item.appendChild(string);
-      lista.appendChild(item);
-      var container = document.getElementById('lista-faltas');
-      container.appendChild(lista);
-      cont++
-
-    }
-
-
-    const selecao = document.querySelectorAll('#lista-faltas');
-
-    selecao.addEventListener('click', () => {
-
-      if (selecao.checked == true) {
-        console.log(document.querySelectorAll('#lista-faltas'));
-      } else {
-        console.log(document.querySelectorAll('#lista-faltas'));
-      }
-
-    })
-
-
-
+  marcar() {
+    this.marcado = true;
   }
 
-  elementos() {
-    let newarray = this.atletas.map((valor) => {
-      let cont = 1;
-      let nomes = valor.nome;
-      let lista = document.createElement("ul");
-      let item = document.createElement("li");
-
-      let checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      let string = document.createTextNode(`${cont.toString().padStart(2, 0)}-${item.nomes}`);
-      checkbox.name = nomes;
-      checkbox.value = string;
-      item.appendChild(checkbox);
-      item.appendChild(string);
-      lista.appendChild(item);
-      var container = document.getElementById('lista-faltas');
-      container.appendChild(lista);
-      cont ++;
-    })
+  desmarcar() {
+    this.marcado = false;
   }
-
-  newmap() {
-    console.log(this.atletas.map(atleta => atleta.nome))
-
-  }
-
 
 }
 
-let lista = new Futebol([
+class MeuItem {
+  constructor(itens) {
+    this.itens = itens.map(item => new Item(item.nome,item.marcado));
+    
+  }
+
+  
+
+  html() {
+    const lista = document.querySelector("#minhaLista");  
+
+    this.itens.forEach((item) => {
+      const itemLista = document.createElement("li");
+      const rotulo = document.createElement("label");
+      const caixaSelecao = document.createElement("input");
+      caixaSelecao.type = "checkbox";
+      caixaSelecao.checked = item.marcado;
+
+      caixaSelecao.addEventListener("change", () => {       
+        if (caixaSelecao.checked) {
+          item.marcar();
+        } else {
+          item.desmarcar();
+        }
+
+        const itensMarcados = this.itens.filter(item => item.marcado)
+        const listaMarcados =document.querySelector("#minhaListaMarcados");
+        listaMarcados.innerHTML = "";
+        itensMarcados.forEach((item) => {
+          const itemLista = document.createElement("li");
+          itemLista.textContent = item.nome;
+
+          listaMarcados.appendChild(itemLista);
+        });
+      });
+      
+      rotulo.appendChild(caixaSelecao);
+      rotulo.appendChild(document.createTextNode(item.nome));
+      itemLista.appendChild(rotulo);
+      lista.appendChild(itemLista);
+    });
+  }
+
+}
+
+
+
+let meuArray = new MeuItem([
   {
     nome: "Edmar",
     posicao: "Defesa",
@@ -212,20 +199,9 @@ let lista = new Futebol([
     posicao: "Defesa",
     habilidade: 0
   },
-
 ]);
 
-lista.newmap()
-lista.elementos()
-
-
-
-
-
-
-
-
-
+meuArray.html();
 
 
 
