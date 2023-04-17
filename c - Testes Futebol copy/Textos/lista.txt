@@ -7,6 +7,7 @@ It looks like you have pasted some JavaScript code. Is there something specific 
 Mensagem recebida.
 Analise o código e responda em portugues
 Mensagem enviada. Analise o código e responda em portugues
+
 Este código define uma classe chamada MeuItem que possui um construtor que aceita dois parâmetros: nome e marcado. O construtor define duas propriedades na instância do objeto: nome, que é definido como o valor do parâmetro nome, e marcado, que é definido como false.
 
 A classe também possui três métodos: marcar, desmarcar e html. O método marcar define a propriedade marcado como true. O método desmarcar define a propriedade marcado como false. O método html cria elementos HTML para exibir a lista de itens.
