@@ -44,26 +44,7 @@ body,html {
   
 }
 .lista-presente ol{
-  text-align: center;
-  list-style: none;  
-  
+  text-align: center;  
 }
-/* *********** */
-.big-checkbox {
-  display: none;
-}
-
-.big-checkbox-custom {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
-}
-
-.big-checkbox:checked + .big-checkbox-custom {
-  background-color: white;
-}
-
-/* *************** */
 
 
