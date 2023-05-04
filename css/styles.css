@@ -13,39 +13,31 @@ html {
   display: block;
   margin: 0 auto;
   font-size: 100%;
-
 }
-.lista-completa h3 {
-  /* background-color: blue; */
+
+
+
+.lista-completa h3 {  
   text-align: center;
-  padding: 2%;
-}
-
-.container-principal {  
-  /* background-color: rgb(62, 52, 90); */
-  display: inline-block;  
-  padding-left: 20%;
-  padding-right: 20%;  
-}
-
-
-
-
-.lista-presente h3 {
-  /* background-color: red; */
-  text-align: center;
-  padding: 2%;
-}
-
-
-.lista-completa ul {
-  text-align: left;
-  list-style: none;
+  padding: 0;  
   
-
+}
+.lista-completa ul {
+  
+  list-style: none; 
+  padding-left: 35%;
 }
 
+.lista-presente h3 {  
+  
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  
+}
 
 .lista-presente ol {
   text-align: left;
+  padding-left: 35%;
+  
 }
