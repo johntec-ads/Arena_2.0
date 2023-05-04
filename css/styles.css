@@ -1,22 +1,72 @@
 body,
 html {
   font-size: clamp(1em, 1em + 1vw, 1.5em);
+  /* background-color: black; */
+  color: rgb(222, 90, 0);
   background-color: black;
-  color: rgb(222, 93, 0);
 }
-.container-principal div {
-  display:inline-table
+#myButton {
+  background-color: green;
+  border: 2px solid black;
+  margin: auto;
+  padding: 20px 20px;
+  display: block;
+  margin: 0 auto;
+  font-size: 100%;  
+  
 }
 
-.container-principal div {
+
+.container-principal div {  
+  display:inline-table;
   margin-left: 0%;
   margin-right: 0%;
   padding: 0%;
-
+  
 }
 
-#myButton {
-  background-color: green;
-  display: block;
-  margin: 0 auto;
+
+.lista-completa h3 {    
+  
+  text-align: center;
+  padding: 2%;  
+  
 }
+.lista-presente h3 {    
+  
+  text-align: center;
+  padding: 2%;  
+  
+}
+
+
+.lista-completa ul{
+  
+  list-style: none;
+  
+  
+}
+.lista-presente ol{
+  text-align: center;
+  /* list-style: none; */  
+  
+}
+/* *********** */
+.big-checkbox {
+  display: none;
+}
+
+.big-checkbox-custom {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid red;
+}
+
+.big-checkbox :checked + .big-checkbox-custom {
+  background-color:green;
+}
+
+/* *************** */
+
+

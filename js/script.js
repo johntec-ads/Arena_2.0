@@ -246,6 +246,17 @@ function html(jogadores) {
     const itemLista = document.createElement("li");
     const rotulo = document.createElement("label");
     const caixaSelecao = document.createElement("input");
+    /*  */
+    const caixaSelecaoPersonalizada = document.createElement("span");
+    caixaSelecao.type = "checkbox";
+    caixaSelecao.classList.add("big-checkbox");
+    caixaSelecaoPersonalizada.classList.add("big-checkbox-custom");
+    rotulo.appendChild(caixaSelecao);
+    rotulo.appendChild(caixaSelecaoPersonalizada);
+    itemLista.appendChild(rotulo);
+    lista.appendChild(itemLista);
+    /*  */
+
     caixaSelecao.type = "checkbox";
     caixaSelecao.checked = item.marcado;
 
@@ -338,6 +349,7 @@ button.addEventListener('click', () => {
   listaCompleta.forEach(list => list.style.display = 'none');
   
 });
+
 html(meuArray);/* Evoca a função html para criar as lista na página html */
 
 
