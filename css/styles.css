@@ -1,9 +1,22 @@
-
+body,
+html {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
+  background-color: black;
+  color: rgb(222, 93, 0);
+}
 .container-principal div {
   display:inline-table
-
 }
 
 .container-principal div {
-  margin-right: 30px;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+
+}
+
+#myButton {
+  background-color: green;
+  display: block;
+  margin: 0 auto;
 }
