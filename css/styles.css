@@ -1,10 +1,9 @@
-body,
-html {
-  font-size: clamp(1em, 1em + 1vw, 1.5em);
-  /* background-color: black; */
+body,html {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);  
   color: rgb(222, 90, 0);
   background-color: black;
 }
+
 #myButton {
   background-color: green;
   border: 2px solid black;
@@ -40,15 +39,13 @@ html {
 }
 
 
-.lista-completa ul{
-  
-  list-style: none;
-  
+.lista-completa ul{  
+  list-style: none; 
   
 }
 .lista-presente ol{
   text-align: center;
-  /* list-style: none; */  
+  list-style: none;  
   
 }
 /* *********** */
@@ -63,8 +60,8 @@ html {
   border: 2px solid red;
 }
 
-.big-checkbox :checked + .big-checkbox-custom {
-  background-color:green;
+.big-checkbox:checked + .big-checkbox-custom {
+  background-color: white;
 }
 
 /* *************** */
