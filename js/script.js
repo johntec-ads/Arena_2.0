@@ -212,13 +212,13 @@ function defesaNivel3(param) {
 function displayLists(timeAzul, timeAmarelo) {
   const containerAzul = document.querySelector('#listaAzul');
   const containerAmarelo = document.querySelector("#listaAmarelo");
-  const ulsAzul = containerAzul.querySelectorAll('ul');
+  const ulsAzul = containerAzul.querySelectorAll('ol');
 
   ulsAzul.forEach(ul => ul.remove());
 
-  const ulsAmarelo = containerAmarelo.querySelectorAll('ul');
+  const ulsAmarelo = containerAmarelo.querySelectorAll('ol');
   ulsAmarelo.forEach(ul => ul.remove());
-  const ulAzul = document.createElement('ul'); 
+  const ulAzul = document.createElement('ol'); 
 
   timeAzul.map(item => {
     const li = document.createElement('li');
@@ -227,7 +227,7 @@ function displayLists(timeAzul, timeAmarelo) {
   });
 
   containerAzul.appendChild(ulAzul); 
-  const ulAmarelo = document.createElement('ul');
+  const ulAmarelo = document.createElement('ol');
   timeAmarelo.map(item => {
     const li = document.createElement('li');
     li.textContent = item.nome;
@@ -247,14 +247,7 @@ function html(jogadores) {
     const rotulo = document.createElement("label");
     const caixaSelecao = document.createElement("input");
     /*  */
-    const caixaSelecaoPersonalizada = document.createElement("span");
-    caixaSelecao.type = "checkbox";
-    caixaSelecao.classList.add("big-checkbox");
-    caixaSelecaoPersonalizada.classList.add("big-checkbox-custom");
-    rotulo.appendChild(caixaSelecao);
-    rotulo.appendChild(caixaSelecaoPersonalizada);
-    itemLista.appendChild(rotulo);
-    lista.appendChild(itemLista);
+    
     /*  */
 
     caixaSelecao.type = "checkbox";
