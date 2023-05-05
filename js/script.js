@@ -343,6 +343,27 @@ button.addEventListener('click', () => {
   
 });
 
+/* Evento de click para retornar para a lista checkbox */
+const backButton = document.querySelector('#backButton');
+backButton.addEventListener('click', () => {
+  // ocultar listas de equipes azul e amarelo
+  document.querySelector('#listaAzul').style.display = 'none';
+  document.querySelector('#listaAmarelo').style.display = 'none';
+  // mostrar lista de seleção
+  document.querySelector('.lista-completa').style.display = 'block';
+});
+/* Evento click para volta para lista de equipes já criada,sem perder os dados */
+const teamsButton = document.querySelector('#teamsButton');
+teamsButton.addEventListener('click', () => {
+  // ocultar lista de seleção
+  document.querySelector('.lista-completa').style.display = 'none';
+  // mostrar listas de equipes azul e amarelo
+  document.querySelector('#listaAzul').style.display = 'block';
+  document.querySelector('#listaAmarelo').style.display = 'block';
+});
+
+
+
 html(meuArray);/* Evoca a função html para criar as lista na página html */
 
 
