@@ -13,6 +13,7 @@ html {
   display: block;
   margin: 0 auto;
   font-size: 100%;
+  border-radius: 20px; /* bordas arredondadas */
 }
 
 .lista-completa h3 {  
@@ -37,16 +38,34 @@ html {
 }
 
 #equipe-azul {
-  background-color: white;
+  background-color: rgb(230, 247, 2);
   color:rgb(4, 4, 250);
   text-align: center;
+  border-radius: 4px; /* bordas arredondadas */
 }
 .team-list ol {    
   padding-left: 35%;
 }
 #equipe-amarelo {
-  background-color: black;
-  color: yellow;
+  background-color: rgb(15, 10, 53);
+  color: rgb(255, 255, 0);
   text-align: center;
+  border-radius: 4px; /* bordas arredondadas */
 }
+
+#imprimir button {
+  background-color: #4CAF50; /* cor de fundo verde */
+  color: white; /* cor do texto branco */
+  padding: 12px 12px; /* preenchimento */
+  border: none; /* sem borda */
+  border-radius: 4px; /* bordas arredondadas */
+  cursor: pointer; /* cursor do mouse em forma de mão */
+  margin: 0 auto;
+  display: block;
+}
+
+#imprimir button:hover {
+  background-color: #3e8e41; /* cor de fundo verde escuro ao passar o mouse */
+}
+
 
