@@ -6,7 +6,7 @@ html {
 }
 
 #myButton {
-  background-color: green;
+  background-color: #4CAF50; /* cor de fundo verde */
   border: 2px solid black;
   margin: auto;
   padding: 20px 20px;
