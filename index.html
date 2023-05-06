@@ -12,15 +12,24 @@
 </head>
 
 <body>
-<div id="container-gerar">
-  <button id="myButton">GERAR EQUIPES</button>
-</div>
-  
-<div id="go-back">
-  <button id="teamsButton">Equipes</button>
-  <button id="backButton">Selecionar</button>
-</div>
-  
+
+  <div class="botao-com-legenda">
+    <button id="myButton"></button>
+    <div class="legenda">Gerar Equipes</div>
+  </div>
+
+  <div class="go-back">
+    <div class="botao-com-legenda2">
+      <button id="backButton"></button>
+      <div class="legenda">Selecionar</div>
+    </div>
+
+    <div class="botao-com-legenda">
+      <button id="teamsButton"></button>
+      <div class="legenda">Equipes</div>
+    </div>
+  </div>
+
 
   <div class="container-principal">
     <div class="lista-completa">
@@ -47,18 +56,16 @@
         <h3 id="equipe-amarelo">Equipe Amarelo</h3>
       </div>
 
+
       <div id="imprimir">
-        <button onclick="window.print()">Imprimir página</button>
-      </div>
-
-    </div>
-
-
-  </div>
+        <div class="botao-com-legenda3"></div>
+        <button id="imprimir" onclick="window.print()"></button>
+        <div class="legenda">Imprimir</div>
+      </div>   
 
 
 
-  <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

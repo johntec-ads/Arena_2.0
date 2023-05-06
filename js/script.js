@@ -105,11 +105,6 @@ let meuArray = ([
     habilidade: 3
   },
   {
-    nome: "Alexandre",
-    posicao: "Defesa",
-    habilidade: 2
-  },
-  {
     nome: "Lacio",
     posicao: "MeioAtaque",
     habilidade: 3,
@@ -134,6 +129,11 @@ let meuArray = ([
     posicao: "Ataque",
     habilidade: 2
   },
+  {
+    nome: "Diego",
+    posicao: "Defesa",
+    habilidade: 3
+  }
 ]);
 
 function marcar() {
@@ -143,6 +143,13 @@ function marcar() {
 function desmarcar() {
   this.marcado = false;
 }
+/* ***Função para ordenar o array original em ordem alfabetica */
+function ordemAZ (param){
+  param.sort((a, b) => a.nome.localeCompare(b.nome));
+  
+}
+
+
 /************Função que mistura o array******** */
 function misturarArray(array) {
   const resultado = array.slice();
@@ -218,7 +225,7 @@ function displayLists(timeAzul, timeAmarelo) {
 
   const ulsAmarelo = containerAmarelo.querySelectorAll('ol');
   ulsAmarelo.forEach(ul => ul.remove());
-  const ulAzul = document.createElement('ol'); 
+  const ulAzul = document.createElement('ol');
 
   timeAzul.map(item => {
     const li = document.createElement('li');
@@ -226,14 +233,14 @@ function displayLists(timeAzul, timeAmarelo) {
     ulAzul.appendChild(li);
   });
 
-  containerAzul.appendChild(ulAzul); 
+  containerAzul.appendChild(ulAzul);
   const ulAmarelo = document.createElement('ol');
   timeAmarelo.map(item => {
     const li = document.createElement('li');
     li.textContent = item.nome;
     ulAmarelo.appendChild(li);
   });
-  containerAmarelo.appendChild(ulAmarelo)  
+  containerAmarelo.appendChild(ulAmarelo)
 }
 /* ************************************************************************ */
 meuArray.forEach(item => item.marcar = marcar)
@@ -247,7 +254,7 @@ function html(jogadores) {
     const rotulo = document.createElement("label");
     const caixaSelecao = document.createElement("input");
     /*  */
-    
+
     /*  */
 
     caixaSelecao.type = "checkbox";
@@ -260,18 +267,18 @@ function html(jogadores) {
         item.desmarcar();
       }
       /* Filtra para o novo array, os itens cuja a propriedade marcado esteja true. */
-      const itensMarcados = jogadores.filter(item => item.marcado);    
+      const itensMarcados = jogadores.filter(item => item.marcado);
 
       filtrar(itensMarcados);//funvção que filtra apenas os itens marcado,no argumento itensMarcados.
       const novaLista = misturarArray(itensMarcados);/* novaLista recebe o argumento itensMarcados
-      evoncando a função que randomiza a ordem da lista */ 
+      evoncando a função que randomiza a ordem da lista */
 
       const meioFiltrado = [].concat(/* concatena as functions para a const meioFiltrado */
         meioNivel4(novaLista),
         meioNivel3(novaLista),
         meioNivel2(novaLista),
         meioNivel1(novaLista),
-      ); 
+      );
       const ataqueFiltrado = [].concat(/* concatena as functions para a const ataqueFiltrado */
         ataqueNivel1(novaLista),
         ataqueNivel2(novaLista),
@@ -284,10 +291,10 @@ function html(jogadores) {
         defesaNivel1(novaLista),
         defesaNivel2(novaLista),
         defesaNivel3(novaLista),
-      );  
+      );
       /* concatena para newAtletas as const criadas pelas functions */
       const newAtletas = [...ataqueFiltrado, ...defesaFiltrado, ...meioFiltrado, ...mAfiltrado];
-      
+
       /* cria duas arrays vazias */
       const timeAzul = [];
       const timeAmarelo = [];
@@ -305,7 +312,7 @@ function html(jogadores) {
       console.log(timeAzul);
 
       /* Function que cria duas lista em html,usando os argumentos de timeAmarelo e timeAzul */
-      displayLists(timeAmarelo,timeAzul);
+      displayLists(timeAmarelo, timeAzul);
       /* ******************************** */
 
       const listaMarcados = document.querySelector("#minhaListaMarcados");
@@ -335,12 +342,12 @@ const button = document.querySelector('#myButton');
 button.addEventListener('click', () => {
   //Mostrar as listas de equipes quando o botão é clicado.
   teamLists.forEach(list => list.style.display = 'block');
-  
-  
+
+
   //Ocultar a lista checkbox
   const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente');
   listaCompleta.forEach(list => list.style.display = 'none');
-  
+
 });
 
 /* Evento de click para retornar para a lista checkbox */
@@ -363,7 +370,7 @@ teamsButton.addEventListener('click', () => {
 });
 
 
-
+ordemAZ(meuArray); /* Evoncando a função para ordenar a lista dos array em ordem alfabetica */
 html(meuArray);/* Evoca a função html para criar as lista na página html */
 
 

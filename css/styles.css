@@ -5,100 +5,138 @@ html {
   background-color: black;
 }
 
-#myButton {
-  background-color: #4CAF50; /* cor de fundo verde */
-  border: 2px solid black;
-  margin: auto;
-  padding: 20px 20px;
-  display: block;
-  margin: 0 auto;
-  font-size: 100%;
-  border-radius: 20px; /* bordas arredondadas */
+#container-gerar {
+  
+  text-align: center;
 }
-#go-back button {
-  background-color: #4CAF50; /* cor de fundo verde */
+
+
+#myButton {
   border: 2px solid black;
   margin: auto;
   padding: 10px 10px;
-  display: inline-block;  
-  font-size: auto;
-  border-radius: 20px; /* bordas arredondadas */  
+  /* reduzir o preenchimento */
+  display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
-#go-back {
+.botao-com-legenda {
+  display: block;
+  text-align: center;
+}
+.legenda {
+  font-size: 14px;
+}
+
+
+.go-back {  
+  display: flex;
+  justify-content: space-between; 
+  padding-left: 15%;
+  padding-right: 15%;  
+}
+
+.go-back {
   display: flex;
   justify-content: space-between;
-  margin-left: 1%;  
-  
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.botao-com-legenda2 {
+  display: inline-block;
+  text-align: center;
+}
+
+.legenda {
+  font-size: 14px;
 }
 
 
-
-#myButton, #backButton, #teamsButton {
-  background-color: #4CAF50; /* cor de fundo verde */
-  border: 2px solid black;
-  margin: auto;
-  padding: 10px 10px; /* reduzir o preenchimento */
-  display: block;
-  margin: 0 auto;
+#backButton, #teamsButton {  
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');  
+  border: 2px solid black;  
+  display: inline-block;  
   font-size: 30%; /* reduzir o tamanho da fonte */
   border-radius: 20px; /* bordas arredondadas */
-
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
-#container-gerar {
+
+
+
+.lista-completa h3 {
   text-align: center;
+  padding: 0;
 }
 
-
-.lista-completa h3 {  
-  text-align: center;
-  padding: 0;    
-}
-
-.lista-completa ul {  
-  list-style: none; 
+.lista-completa ul {
+  list-style: none;
   padding-left: 35%;
 }
 
-.lista-presente h3 {    
+.lista-presente h3 {
   text-align: center;
   padding-left: 0;
-  padding-right: 0;  
+  padding-right: 0;
 }
 
 .lista-presente ol {
   text-align: left;
-  padding-left: 35%;    
+  padding-left: 35%;
 }
 
 #equipe-azul {
   background-color: rgb(230, 247, 2);
-  color:rgb(4, 4, 250);
+  color: rgb(4, 4, 250);
   text-align: center;
-  border-radius: 4px; /* bordas arredondadas */
+  border-radius: 4px;
+  /* bordas arredondadas */
 }
-.team-list ol {    
+
+.team-list ol {
   padding-left: 35%;
 }
+
 #equipe-amarelo {
   background-color: rgb(15, 10, 53);
   color: rgb(255, 255, 0);
   text-align: center;
-  border-radius: 4px; /* bordas arredondadas */
+  border-radius: 4px;
+  /* bordas arredondadas */
 }
 
-#imprimir button {
-  background-color: #4CAF50; /* cor de fundo verde */
-  color: white; /* cor do texto branco */
-  padding: 12px 12px; /* preenchimento */
-  border: none; /* sem borda */
-  border-radius: 4px; /* bordas arredondadas */
-  cursor: pointer; /* cursor do mouse em forma de mão */
-  margin: 0 auto;
+#imprimir {
+  border: 2px solid black;
+  margin: auto;
+  padding: 10px 10px;
+  /* reduzir o preenchimento */
   display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 
-#imprimir button:hover {
-  background-color: #3e8e41; /* cor de fundo verde escuro ao passar o mouse */
+.botao-com-legenda3 {
+  display: block;
+  text-align: center;
 }
 
-
+.legenda {
+  font-size: 14px;
+}
