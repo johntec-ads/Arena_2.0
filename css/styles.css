@@ -249,14 +249,15 @@ html {
   text-align: left;
 }
 .container-principal h3 {
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 #minhaLista {    
   padding-left: 0;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 #minhaListaMarcados {
+  margin-left: 2px;
   margin-right: 0px;
 }
  
