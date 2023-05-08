@@ -141,6 +141,8 @@ html {
   font-size: 14px;
 }
 
+/************** Media Query ***********/
+
 @media (max-width: 720px){
   body,
 html {
@@ -212,7 +214,7 @@ html {
 
 
 
-.lista-completa h3 {
+/* .lista-completa h3 {
   text-align: center;
   padding: 0;
 }
@@ -231,14 +233,14 @@ html {
 .lista-presente ol {
   text-align: left;
   padding-left: 35%;
-}
+} */
 
 
 /* ***Apresentação das listas */
 
 .container-principal {
   display: flex;
-  font-size: 6vw;
+  font-size: 5vw;
 }
 
 .container-principal div{  

@@ -356,7 +356,7 @@ backButton.addEventListener('click', () => {
   // ocultar listas de equipes azul e amarelo
   document.querySelector('#listaAzul').style.display = 'none';
   document.querySelector('#listaAmarelo').style.display = 'none';
-  // mostrar lista de seleção
+  // mostrar lista de seleção e lista presente
   document.querySelector('.lista-completa').style.display = 'block';
   document.querySelector('.lista-presente').style.display = 'block';
 });
@@ -367,6 +367,7 @@ const teamsButton = document.querySelector('#teamsButton');
 teamsButton.addEventListener('click', () => {
   // ocultar lista de seleção
   document.querySelector('.lista-completa').style.display = 'none';
+  document.querySelector('.lista-presente').style.display = 'none';
   // mostrar listas de equipes azul e amarelo
   document.querySelector('#listaAzul').style.display = 'block';
   document.querySelector('#listaAmarelo').style.display = 'block';
