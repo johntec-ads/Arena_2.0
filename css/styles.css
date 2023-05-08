@@ -248,8 +248,11 @@ html {
   font-size: auto;  
   text-align: left;
 }
-#minhaLista {  
-  
+.container-principal h3 {
+  font-size: auto;
+}
+
+#minhaLista {    
   padding-left: 0;
   margin-left: 15px;
 }
