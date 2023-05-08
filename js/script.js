@@ -358,7 +358,10 @@ backButton.addEventListener('click', () => {
   document.querySelector('#listaAmarelo').style.display = 'none';
   // mostrar lista de seleção
   document.querySelector('.lista-completa').style.display = 'block';
+  document.querySelector('.lista-presente').style.display = 'block';
 });
+
+
 /* Evento click para volta para lista de equipes já criada,sem perder os dados */
 const teamsButton = document.querySelector('#teamsButton');
 teamsButton.addEventListener('click', () => {
