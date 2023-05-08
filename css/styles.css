@@ -249,7 +249,7 @@ html {
   text-align: left;
 }
 .container-principal h3 {
-  font-size: 5vw;
+  font-size: auto;
 }
 
 #minhaLista {    
