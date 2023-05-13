@@ -1,1 +1,314 @@
-body,html{font-size:clamp(1em,1em+1vw,1.5em);color:rgb(222,90,0);background-color:#000}#container-gerar{text-align:center}#myButton{border:2px solid #000;margin:auto;padding:10px 10px;display:block;font-size:30%;border-radius:20px;background-image:url(https://cdn-icons-png.flaticon.com/512/731/731944.png);background-size:cover;border-radius:50%;height:50px;width:50px}.botao-com-legenda{display:block;text-align:center}.legenda{font-size:14px}.go-back{display:flex;justify-content:space-between;padding-left:15%;padding-right:15%}.go-back{display:flex;justify-content:space-between;padding-left:15%;padding-right:15%}.botao-com-legenda2{display:inline-block;text-align:center}.legenda{font-size:14px}#backButton,#teamsButton{background-image:url(https://cdn-icons-png.flaticon.com/512/731/731944.png);border:2px solid #000;display:inline-block;font-size:30%;border-radius:20px;background-size:cover;border-radius:50%;height:50px;width:50px}.lista-completa h3{text-align:center;padding:0}.lista-completa ul{list-style:none;padding-left:35%}.lista-presente h3{text-align:center;padding-left:0;padding-right:0}.lista-presente ol{text-align:left;padding-left:35%}#equipe-azul{background-color:rgb(230,247,2);color:rgb(4,4,250);text-align:center;border-radius:4px}.team-list ol{padding-left:35%}#equipe-amarelo{background-color:rgb(15,10,53);color:rgb(255,255,0);text-align:center;border-radius:4px}#imprimir{border:2px solid #000;margin:auto;padding:10px 10px;display:block;font-size:30%;border-radius:20px;background-image:url(https://cdn-icons-png.flaticon.com/512/731/731944.png);background-size:cover;border-radius:50%;height:50px;width:50px}.botao-com-legenda3{display:block;text-align:center}.legenda{font-size:14px}@media (max-width:720px){body,html{font-size:clamp(1em,1em+1vw,1.5em);color:rgb(222,90,0);background-color:#000}#myButton{border:2px solid #000;margin:auto;padding:10px 10px;display:block;font-size:30%;border-radius:20px;background-image:url(https://cdn-icons-png.flaticon.com/512/731/731944.png);background-size:cover;border-radius:50%;height:50px;width:50px}.botao-com-legenda{display:block;text-align:center}.legenda{font-size:14px}.go-back{display:flex;justify-content:space-between;padding-left:15%;padding-right:15%}.go-back{display:flex;justify-content:space-between;padding-left:15%;padding-right:15%}.botao-com-legenda2{display:inline-block;text-align:center}.legenda{font-size:14px}#backButton,#teamsButton{background-image:url(https://cdn-icons-png.flaticon.com/512/731/731944.png);border:2px solid #000;display:inline-block;font-size:30%;border-radius:20px;background-size:cover;border-radius:50%;height:50px;width:50px}.container-principal{display:flex;font-size:4vw}.container-principal div{flex:1;font-size:auto;text-align:left}.container-principal h3{font-size:auto}#minhaLista{padding-left:0;margin-left:10px}#minhaListaMarcados{margin-left:2px;margin-right:0}#equipe-azul{background-color:rgb(230,247,2);color:rgb(4,4,250);text-align:center;border-radius:4px}.team-list ol{padding-left:35%}#equipe-amarelo{background-color:rgb(15,10,53);color:rgb(255,255,0);text-align:center;border-radius:4px}#imprimir{border:2px solid #000;margin:auto;padding:10px 10px;display:block;font-size:30%;border-radius:20px;background-image:url(https://cdn-icons-png.flaticon.com/512/731/731944.png);background-size:cover;border-radius:50%;height:50px;width:50px}.botao-com-legenda3{display:block;text-align:center}.legenda{font-size:14px}}
+body,
+html {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
+  color: rgb(222, 90, 0);
+  background-color: black;
+}
+
+#container-gerar {
+  
+  text-align: center;
+}
+
+
+#myButton {
+  border: 2px solid black;
+  margin: auto;
+  padding: 10px 10px;
+  /* reduzir o preenchimento */
+  display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.botao-com-legenda {
+  display: block;
+  text-align: center;
+}
+.legenda {
+  font-size: 14px;
+}
+
+
+.go-back {  
+  display: flex;
+  justify-content: space-between; 
+  padding-left: 15%;
+  padding-right: 15%;  
+}
+
+.go-back {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.botao-com-legenda2 {
+  display: inline-block;
+  text-align: center;
+}
+
+.legenda {
+  font-size: 14px;
+}
+
+
+#backButton, #teamsButton {  
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');  
+  border: 2px solid black;  
+  display: inline-block;  
+  font-size: 30%; /* reduzir o tamanho da fonte */
+  border-radius: 20px; /* bordas arredondadas */
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+.lista-completa h3 {
+  text-align: center;
+  padding: 0;
+}
+
+.lista-completa ul {
+  list-style: none;
+  padding-left: 35%;
+}
+
+.lista-presente h3 {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lista-presente ol {
+  text-align: left;
+  padding-left: 35%;
+}
+
+#equipe-azul {
+  background-color: rgb(230, 247, 2);
+  color: rgb(4, 4, 250);
+  text-align: center;
+  border-radius: 4px;
+  /* bordas arredondadas */
+}
+
+.team-list ol {
+  padding-left: 35%;
+}
+
+#equipe-amarelo {
+  background-color: rgb(15, 10, 53);
+  color: rgb(255, 255, 0);
+  text-align: center;
+  border-radius: 4px;
+  /* bordas arredondadas */
+}
+
+#imprimir {
+  border: 2px solid black;
+  margin: auto;
+  padding: 10px 10px;
+  /* reduzir o preenchimento */
+  display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.botao-com-legenda3 {
+  display: block;
+  text-align: center;
+}
+
+.legenda {
+  font-size: 14px;
+}
+
+/************** Media Query ***********/
+
+@media (max-width: 720px){
+  body,
+html {
+  font-size: clamp(1em, 1em + 1vw, 1.5em);
+  color: rgb(222, 90, 0);
+  background-color: black;
+}
+
+#myButton {
+  border: 2px solid black;
+  margin: auto;
+  padding: 10px 10px;
+  /* reduzir o preenchimento */
+  display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.botao-com-legenda {
+  display: block;
+  text-align: center;
+}
+.legenda {
+  font-size: 14px;
+}
+
+
+.go-back {  
+  display: flex;
+  justify-content: space-between; 
+  padding-left: 15%;
+  padding-right: 15%;  
+}
+
+.go-back {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.botao-com-legenda2 {
+  display: inline-block;
+  text-align: center;
+}
+
+.legenda {
+  font-size: 14px;
+}
+
+
+#backButton, #teamsButton {  
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');  
+  border: 2px solid black;  
+  display: inline-block;  
+  font-size: 30%; /* reduzir o tamanho da fonte */
+  border-radius: 20px; /* bordas arredondadas */
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+
+
+/* .lista-completa h3 {
+  text-align: center;
+  padding: 0;
+}
+
+.lista-completa ul {
+  list-style: none;
+  padding-left: 35%;
+}
+
+.lista-presente h3 {
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.lista-presente ol {
+  text-align: left;
+  padding-left: 35%;
+} */
+
+
+/* ***Apresentação das listas */
+
+.container-principal {
+  display: flex;
+  font-size: 4vw;
+}
+
+.container-principal div{  
+  flex: 1;
+  font-size: auto;  
+  text-align: left;
+}
+.container-principal h3 {
+  font-size: auto;
+}
+
+#minhaLista {    
+  padding-left: 0;
+  margin-left: 10px;
+}
+#minhaListaMarcados {
+  margin-left: 2px;
+  margin-right: 0px;
+}
+ 
+
+/* *************************** */
+
+
+#equipe-azul {
+  background-color: rgb(230, 247, 2);
+  color: rgb(4, 4, 250);
+  text-align: center;
+  border-radius: 4px;
+  /* bordas arredondadas */
+}
+
+.team-list ol {
+  padding-left: 35%;
+}
+
+#equipe-amarelo {
+  background-color: rgb(15, 10, 53);
+  color: rgb(255, 255, 0);
+  text-align: center;
+  border-radius: 4px;
+  /* bordas arredondadas */
+}
+
+#imprimir {
+  border: 2px solid black;
+  margin: auto;
+  padding: 10px 10px;
+  /* reduzir o preenchimento */
+  display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.botao-com-legenda3 {
+  display: block;
+  text-align: center;
+}
+
+.legenda {
+  font-size: 14px;
+}
+
+}
