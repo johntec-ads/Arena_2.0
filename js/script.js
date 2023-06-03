@@ -95,7 +95,7 @@ let meuArray = ([
     habilidade: 3
   },
   {
-    nome: "João Ramalho",
+    nome: "Guilherme",
     posicao: "MeioAtaque",
     habilidade: 3,
   },
