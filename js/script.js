@@ -84,11 +84,11 @@ let meuArray = ([
     posicao: "Defesa",
     habilidade: 1
   },
-  {
+  /* {
     nome: "Bilu",
     posicao: "Ataque",
     habilidade: 1
-  },
+  }, */
   {
     nome: "Herico",
     posicao: "Meio",
