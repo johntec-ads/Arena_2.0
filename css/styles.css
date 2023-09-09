@@ -43,13 +43,6 @@ html {
   padding-right: 15%;  
 }
 
-.go-back {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .botao-com-legenda2 {
   display: inline-block;
   text-align: center;

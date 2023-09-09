@@ -284,7 +284,7 @@ function html(jogadores) {
       /* Filtra para o novo array, os itens cuja a propriedade marcado esteja true. */
       const itensMarcados = jogadores.filter(item => item.marcado);
 
-      filtrar(itensMarcados);//funvção que filtra apenas os itens marcado,no argumento itensMarcados.
+      filtrar(itensMarcados);//função que filtra apenas os itens marcado,no argumento itensMarcados.
       const novaLista = misturarArray(itensMarcados);/* novaLista recebe o argumento itensMarcados
       evoncando a função que randomiza a ordem da lista */
 
