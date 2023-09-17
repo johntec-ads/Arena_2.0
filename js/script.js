@@ -395,8 +395,8 @@ teamsButton.addEventListener('click', () => {
 });
 
 
-ordemAZ(meuArray); /* Evoncando a função para ordenar a lista dos array em ordem alfabetica */
-html(meuArray);/* Evoca a função html para criar as lista na página html */
+ordemAZ(meuArray); /* Evoncando função que ordena o array em ordem alfabetica */
+html(meuArray);/* Evocando a função que criar as lista na página html */
 
 
 
