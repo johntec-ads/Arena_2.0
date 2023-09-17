@@ -398,6 +398,16 @@ teamsButton.addEventListener('click', () => {
 ordemAZ(meuArray); /* Evoncando função que ordena o array em ordem alfabetica */
 html(meuArray);/* Evocando a função que criar as lista na página html */
 
+/* Evento de click para printar a tela, usando a bibliotéca Canvas */
+const printButton = document.querySelector('#print');
+
+printButton.addEventListener('click', () => {
+  html2canvas(document.body).then(function(canvas) {
+    document.body.appendChild(canvas);
+});
+
+});
+
 
 
 
