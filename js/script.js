@@ -36,8 +36,8 @@ let meuArray = ([
   },
   {
     nome: "Dario",
-    posicao: "Meio",
-    habilidade: 3
+    posicao: "Defesa",
+    habilidade: 2
   },
   {
     nome: "Vinicius",
@@ -105,7 +105,7 @@ let meuArray = ([
     habilidade: 3
   },
   {
-    nome: "Guilherme",
+    nome: "Guilherme Filho",
     posicao: "MeioAtaque",
     habilidade: 3,
   },
@@ -137,7 +137,7 @@ let meuArray = ([
   {
     nome: "Tannuri",
     posicao: "Ataque",
-    habilidade: 2
+    habilidade: 1
   },
   {
     nome: "Diego",
@@ -298,7 +298,8 @@ function html(jogadores) {
         ataqueNivel1(novaLista),
         ataqueNivel2(novaLista),
         ataqueNivel3(novaLista),
-      );
+        );       
+        
       const mAfiltrado = meioAtaque(novaLista);/* mAfiltrado recebe a function meioAtaque */
 
       const defesaFiltrado = [].concat(/* concatena as functions para a const defesaFiltrado */
@@ -309,6 +310,11 @@ function html(jogadores) {
       );
       /* concatena para newAtletas as const criadas pelas functions */
       const newAtletas = [...ataqueFiltrado, ...defesaFiltrado, ...meioFiltrado, ...mAfiltrado];
+      console.log(ataqueFiltrado)
+      console.log(defesaFiltrado)
+      console.log(meioFiltrado)
+      console.log(mAfiltrado)
+      
 
       /* cria duas arrays vazias */
       const timeAzul = [];
@@ -323,8 +329,8 @@ function html(jogadores) {
           timeAmarelo.push(jogador);
         }
       });
-      console.log(timeAmarelo);
-      console.log(timeAzul);
+      /* console.log(timeAmarelo);
+      console.log(timeAzul); */
 
       /* Function que cria duas lista em html,usando os argumentos de timeAmarelo e timeAzul */
       displayLists(timeAmarelo, timeAzul);
