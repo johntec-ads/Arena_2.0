@@ -2,7 +2,7 @@ let meuArray = ([
   {
     nome: "Edmar",
     posicao: "Defesa",
-    habilidade: 3
+    defesa: 3,
   },
   {
     nome: "Miguel",
@@ -55,7 +55,7 @@ let meuArray = ([
     habilidade: 2
   },
   {
-    nome: "Victor",
+    nome: "Paulinho (Victor)",
     posicao: "MeioAtaque",
     habilidade: 3,
   },
@@ -94,11 +94,11 @@ let meuArray = ([
     posicao: "Defesa",
     habilidade: 1
   },
-  /* {
-    nome: "Bilu",
-    posicao: "Ataque",
+  {
+    nome: "Alan(Xandão)",
+    posicao: "Defesa",
     habilidade: 1
-  }, */
+  },
   {
     nome: "Herico",
     posicao: "Meio",
@@ -159,9 +159,9 @@ function desmarcar() {
   this.marcado = false;
 }
 /* ***Função para ordenar o array original em ordem alfabetica */
-function ordemAZ (param){
+function ordemAZ(param) {
   param.sort((a, b) => a.nome.localeCompare(b.nome));
-  
+
 }
 
 
@@ -174,11 +174,7 @@ function misturarArray(array) {
   }
   return resultado;
 }
-/* *************Function para filtrar os objetos cuja a prop marcado seja true***/
-function filtrar(param) {
-  const filtro = param.filter(item => item.marcado)
-  return filtro;
-}
+
 /* *************Function para filtrar a posição Meio e suas habilidades*********/
 function meioNivel4(param) {
   const meioNivel4 = param.filter(item => item.habilidade === 4 && item.posicao === "Meio");
@@ -284,9 +280,8 @@ function html(jogadores) {
       /* Filtra para o novo array, os itens cuja a propriedade marcado esteja true. */
       const itensMarcados = jogadores.filter(item => item.marcado);
 
-      filtrar(itensMarcados);//função que filtra apenas os itens marcado,no argumento itensMarcados.
-      const novaLista = misturarArray(itensMarcados);/* novaLista recebe o argumento itensMarcados
-      evoncando a função que randomiza a ordem da lista */
+      /* novaLista recebe o argumento itensMarcados  evoncando a função que randomiza a ordem da lista */
+      const novaLista = misturarArray(itensMarcados);
 
       const meioFiltrado = [].concat(/* concatena as functions para a const meioFiltrado */
         meioNivel4(novaLista),
@@ -298,8 +293,8 @@ function html(jogadores) {
         ataqueNivel1(novaLista),
         ataqueNivel2(novaLista),
         ataqueNivel3(novaLista),
-        );       
-        
+      );
+
       const mAfiltrado = meioAtaque(novaLista);/* mAfiltrado recebe a function meioAtaque */
 
       const defesaFiltrado = [].concat(/* concatena as functions para a const defesaFiltrado */
@@ -314,7 +309,7 @@ function html(jogadores) {
       console.log(defesaFiltrado)
       console.log(meioFiltrado)
       console.log(mAfiltrado)
-      
+
 
       /* cria duas arrays vazias */
       const timeAzul = [];
@@ -398,20 +393,25 @@ teamsButton.addEventListener('click', () => {
 ordemAZ(meuArray); /* Evoncando função que ordena o array em ordem alfabetica */
 html(meuArray);/* Evocando a função que criar as lista na página html */
 
-/* Evento de click para printar a tela, usando a bibliotéca Canvas */
+/* Orientações no txt da página */
 const printButton = document.querySelector('#print');
-
 printButton.addEventListener('click', () => {
-  html2canvas(document.body).then(function(canvas) {
-    document.body.appendChild(canvas);
+  html2canvas(document.body).then(function (canvas) {
+    var dataUrl = canvas.toDataURL();
+    var img = new Image();
+    img.src = dataUrl;
+    img.style.width = '100%';
+    img.style.height = 'auto';
+    document.body.appendChild(img);
+
+    const btn = document.createElement('buttom');
+    btn.id = 'remove-img'
+    btn.innerHTML = "Remover imagem";
+    btn.addEventListener("click", function () {
+      document.body.removeChild(img);
+      document.body.removeChild(btn);// remove o botão também
+
+    });
+    document.body.appendChild(btn);//adiciona o botão após a imagem
+  });
 });
-
-});
-
-
-
-
-
-
-
-

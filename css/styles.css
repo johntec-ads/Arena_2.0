@@ -4,28 +4,22 @@ html {
   color: rgb(222, 90, 0);
   background-color: black;
 }
-
-#container-gerar {
-  
-  text-align: center;
-}
-
-
+/* ******Botões************ */
 #myButton {
-  border: 2px solid black;
+  border: px solid black;
   margin: auto;
   padding: 10px 10px;
   /* reduzir o preenchimento */
-  display: block;
-  font-size: 30%;
+  display: block;  
   /* reduzir o tamanho da fonte */
   border-radius: 20px;
   /* bordas arredondadas */
   background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
   background-size: cover;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
 }
 .botao-com-legenda {
   display: block;
@@ -42,17 +36,10 @@ html {
   padding-left: 15%;
   padding-right: 15%;  
 }
-
 .botao-com-legenda2 {
   display: inline-block;
   text-align: center;
 }
-
-.legenda {
-  font-size: 14px;
-}
-
-
 #backButton, #teamsButton {  
   background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');  
   border: 2px solid black;  
@@ -61,10 +48,56 @@ html {
   border-radius: 20px; /* bordas arredondadas */
   background-size: cover;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
 }
 
+/* Button print */
+#print {
+  border: 2px solid black;
+  margin: auto;
+  padding: 10px 10px;
+  /* reduzir o preenchimento */
+  display: block;
+  font-size: 30%;
+  /* reduzir o tamanho da fonte */
+  border-radius: 20px;
+  /* bordas arredondadas */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
+  background-size: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}
+
+#remove-img {  
+  padding: auto;
+  border: 2px solid black ;  
+  display:block;
+  margin-left: auto;
+  margin-right: auto;  
+  background-color: hsl(0, 15%, 92%);
+  background-size: cover;
+  text-align: center;  
+  color: blue;
+  width: 30%;  
+}
+/* ******gerando lista de presença********* */
+
+.container-principal {
+  display: flex;
+  font-size: 4vw;
+}
+.container-principal div{  
+  flex: 1;
+  font-size: auto;  
+  text-align: left;
+}
+.container-principal h3 {
+  font-size: auto;
+}
 
 
 .lista-completa h3 {
@@ -108,22 +141,6 @@ html {
   /* bordas arredondadas */
 }
 
-#imprimir {
-  border: 2px solid black;
-  margin: auto;
-  padding: 10px 10px;
-  /* reduzir o preenchimento */
-  display: block;
-  font-size: 30%;
-  /* reduzir o tamanho da fonte */
-  border-radius: 20px;
-  /* bordas arredondadas */
-  background-image: url('https://cdn-icons-png.flaticon.com/512/731/731944.png');
-  background-size: cover;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-}
 
 .botao-com-legenda3 {
   display: block;
@@ -131,7 +148,24 @@ html {
 }
 
 .legenda {
-  font-size: 14px;
+  font-size: 30px;
+}
+#remove-img {  
+  cursor: pointer;
+  display: block; 
+  text-align: center;
+  border-radius: 4px;
+  background-size: cover;
+  border: 2px solid ;
+ 
+
+  /* 
+  margin: 10px 10px 10px 10px;
+  display:flow-root;
+  background-color: black;
+  
+  text-align: center;  
+  */
 }
 
 /************** Media Query ***********/
@@ -205,30 +239,6 @@ html {
   width: 50px;
 }
 
-
-
-/* .lista-completa h3 {
-  text-align: center;
-  padding: 0;
-}
-
-.lista-completa ul {
-  list-style: none;
-  padding-left: 35%;
-}
-
-.lista-presente h3 {
-  text-align: center;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.lista-presente ol {
-  text-align: left;
-  padding-left: 35%;
-} */
-
-
 /* ***Apresentação das listas */
 
 .container-principal {
@@ -278,7 +288,7 @@ html {
   /* bordas arredondadas */
 }
 
-#imprimir {
+#print {
   border: 2px solid black;
   margin: auto;
   padding: 10px 10px;
@@ -294,14 +304,22 @@ html {
   height: 50px;
   width: 50px;
 }
-
-.botao-com-legenda3 {
-  display: block;
-  text-align: center;
-}
-
 .legenda {
   font-size: 14px;
+}
+
+#remove-img {  
+  padding: auto;
+  border: 2px solid black ;  
+  display:block;
+  margin-left: auto;
+  margin-right: auto;  
+  background-color: hsl(0, 15%, 92%);
+  border-radius: 30px;
+  text-align: center;  
+  color: blue;
+  width: 30%;  
+  font-size: 18px;
 }
 
 }
