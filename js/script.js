@@ -2,7 +2,7 @@ let meuArray = ([
   {
     nome: "Edmar",
     posicao: "Defesa",
-    defesa: 3,
+    habilidade: 3,
   },
   {
     nome: "Miguel",
