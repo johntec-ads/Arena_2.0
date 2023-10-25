@@ -1,28 +1,23 @@
-Bilu
-Felipe Indiano
-Leonel
-Odimar
-Tota
-João Vitor
-Edmar
-Sassi
-John
-Dario
-João Ramalho
-Wanderson
-Piu Piu
+const printButton = document.querySelector('#print');
+printButton.addEventListener('click', () => {
+  html2canvas(document.body).then(function (canvas) {
+    var dataUrl = canvas.toDataURL();
+    var img = new Image();
+    img.src = dataUrl;
+    img.style.width = '100%';
+    img.style.height = 'auto';
+    document.body.appendChild(img);
 
-Alison
-Tannuri
-Gustavo Filho
-Tomazoni
-Alexandre
-Jonathan
-Vinicius
-Miguel
-Helio
-Herico
-Gabriel
-Maua
-Lacio
-Victor
+    const btn = document.createElement('button');
+    btn.id = 'remove-img'
+    btn.innerHTML = "Remover imagem";
+    btn.addEventListener("click", function () {
+      document.body.removeChild(img);
+      document.body.removeChild(btn); // remove o botão também
+    });
+    document.body.appendChild(btn); // adiciona o botão após a imagem
+
+    // Rola para a imagem
+    window.scrollTo(0,document.body.scrollHeight);
+  });
+});

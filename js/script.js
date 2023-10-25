@@ -42,7 +42,7 @@ let meuArray = ([
   {
     nome: "Vinicius",
     posicao: "Defesa",
-    habilidade: 2
+    habilidade: 1
   },
   {
     nome: "Maua",
@@ -284,10 +284,10 @@ function html(jogadores) {
       const novaLista = misturarArray(itensMarcados);
 
       const meioFiltrado = [].concat(/* concatena as functions para a const meioFiltrado */
-        meioNivel4(novaLista),
-        meioNivel3(novaLista),
-        meioNivel2(novaLista),
         meioNivel1(novaLista),
+        meioNivel2(novaLista),
+        meioNivel3(novaLista),
+        meioNivel4(novaLista),
       );
       const ataqueFiltrado = [].concat(/* concatena as functions para a const ataqueFiltrado */
         ataqueNivel1(novaLista),
@@ -413,5 +413,8 @@ printButton.addEventListener('click', () => {
 
     });
     document.body.appendChild(btn);//adiciona o botão após a imagem
+
+    //Rola para mostrar a imagem gerada
+    window.scrollTo(0, document.body.scrollHeight);
   });
 });

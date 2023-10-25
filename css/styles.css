@@ -174,8 +174,8 @@ html {
   body,
 html {
   font-size: clamp(1em, 1em + 1vw, 1.5em);
-  color: rgb(222, 90, 0);
-  background-color: black;
+  color: black;
+  background-color:greenyellow;
 }
 
 #myButton {
@@ -208,13 +208,6 @@ html {
   justify-content: space-between; 
   padding-left: 15%;
   padding-right: 15%;  
-}
-
-.go-back {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
 .botao-com-legenda2 {
@@ -265,11 +258,22 @@ html {
 }
  
 
-/* *************************** */
-
+/* *************Equipes************** */
+#listaAzul {
+  background-color: white;
+  color: white;
+  background-image: url("../img/camisetaAzul2.webp");
+  background-size: cover;
+}
+#listaAmarelo {
+  background-color: white;
+  color: black;
+  background-image: url("../img/camisetaAmarela.webp");
+  background-size: cover;
+}
 
 #equipe-azul {
-  background-color: rgb(230, 247, 2);
+  background-color: greenyellow;
   color: rgb(4, 4, 250);
   text-align: center;
   border-radius: 4px;
@@ -310,16 +314,15 @@ html {
 
 #remove-img {  
   padding: auto;
-  border: 2px solid black ;  
   display:block;
   margin-left: auto;
   margin-right: auto;  
-  background-color: hsl(0, 15%, 92%);
+  background-color: white;
   border-radius: 30px;
   text-align: center;  
-  color: blue;
-  width: 30%;  
-  font-size: 18px;
+  color:  rgb(222, 90, 0);
+  width: 100%;   
+  font-size: 20px;  
 }
 
 }
