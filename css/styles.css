@@ -281,9 +281,7 @@ html {
   /* bordas arredondadas */
 }
 
-.team-list ol {
-  padding-left: 35%;
-}
+
 
 #equipe-amarelo {
   background-color: #70FF72;
@@ -323,7 +321,7 @@ html {
   border-radius: 30px;
   text-align: center;  
   color:  rgb(222, 90, 0);
-  width: 100%;   
+  width: 50%;   
   font-size: 20px;  
 }
 
