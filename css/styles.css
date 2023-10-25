@@ -175,7 +175,7 @@ html {
 html {
   font-size: clamp(1em, 1em + 1vw, 1.5em);
   color: black;
-  background-color:greenyellow;
+  background-color:#70FF72;
 }
 
 #myButton {
@@ -258,23 +258,24 @@ html {
 }
  
 
-/* *************Equipes************** */
-#listaAzul {
-  background-color: white;
+/* *************Equipes************* */
+#listaAzul {  
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   background-image: url("../img/camisetaAzul2.webp");
   background-size: cover;
 }
-#listaAmarelo {
-  background-color: white;
+#listaAmarelo {  
   color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   background-image: url("../img/camisetaAmarela.webp");
   background-size: cover;
 }
 
 #equipe-azul {
-  background-color: greenyellow;
-  color: rgb(4, 4, 250);
+  background-color: #70FF72;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   text-align: center;
   border-radius: 4px;
   /* bordas arredondadas */
@@ -285,8 +286,9 @@ html {
 }
 
 #equipe-amarelo {
-  background-color: rgb(15, 10, 53);
-  color: rgb(255, 255, 0);
+  background-color: #70FF72;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
   text-align: center;
   border-radius: 4px;
   /* bordas arredondadas */
