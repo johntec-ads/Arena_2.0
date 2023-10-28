@@ -87,7 +87,7 @@ let meuArray = ([
   {
     nome: "João Vitor",
     posicao: "Defesa",
-    habilidade: 2
+    habilidade: 1
   },
   {
     nome: "Odimar",
@@ -350,23 +350,22 @@ function html(jogadores) {
   })
 }
 //Ocultar as listas de equipes no início.
-const teamLists = document.querySelectorAll('.team-list');
+const teamLists = document.querySelectorAll('.team-list, #backButton, #teamsButton,.legenda1, .legenda2');
 teamLists.forEach(list => list.style.display = 'none');
 
 //Adicionar um manipulador de eventos click ao botão
 const button = document.querySelector('#myButton');
 button.addEventListener('click', () => {
-  //Mostrar as listas de equipes quando o botão é clicado.
+  
+  //Mostrar as listas de equipes quando o botão é clicado e oculta as equipes.
   teamLists.forEach(list => list.style.display = 'block');
-
-
   //Ocultar a lista checkbox
-  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente');
+  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda');
   listaCompleta.forEach(list => list.style.display = 'none');
 
 });
 
-/* Evento de click para retornar para a lista checkbox */
+/* Evento de click para retornar para a lista checkbox e ocultar as equipes */
 const backButton = document.querySelector('#backButton');
 backButton.addEventListener('click', () => {
   // ocultar listas de equipes azul e amarelo

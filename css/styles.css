@@ -196,13 +196,8 @@ html {
 }
 .botao-com-legenda {
   display: block;
-  text-align: center;
+  text-align: center;  
 }
-.legenda {
-  font-size: 14px;
-}
-
-
 .go-back {  
   display: flex;
   justify-content: space-between; 
@@ -215,7 +210,15 @@ html {
   text-align: center;
 }
 
-.legenda {
+.legenda1 {
+  font-size: 14px;
+}
+
+.legenda2 {
+  font-size: 14px;
+}
+
+.legenda3 {
   font-size: 14px;
 }
 
@@ -323,7 +326,7 @@ html {
   color:  rgb(222, 90, 0);
   width: 50%;   
   font-size: 25px;  
-  
+ 
 }
 
 }
