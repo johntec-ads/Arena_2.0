@@ -148,7 +148,47 @@ let meuArray = ([
     nome: "Alexandre",
     posicao: "Defesa",
     habilidade: 2
-  }
+  },
+  {
+    nome: "z_Convidado N01",
+    posicao:  "Defesa",
+    habilidade: 1
+  },
+  {
+    nome: "z_Convidado N01",
+    posicao:  "Defesa",
+    habilidade: 1
+  },
+  {
+    nome: "z_Convidado N01",
+    posicao:  "Defesa",
+    habilidade: 1
+  },
+  {
+    nome: "z_Convidado N01",
+    posicao:  "Defesa",
+    habilidade: 1
+  },
+  {
+    nome: "z_Convidado N03",
+    posicao:  "Defesa",
+    habilidade: 3
+  },
+  {
+    nome: "z_Convidado N03",
+    posicao:  "Defesa",
+    habilidade: 3
+  },
+  {
+    nome: "z_Convidado N03",
+    posicao:  "Defesa",
+    habilidade: 3
+  },
+  {
+    nome: "z_Convidado N03",
+    posicao:  "Defesa",
+    habilidade: 3
+  },
 ]);
 
 function marcar() {
@@ -361,7 +401,7 @@ button.addEventListener('click', () => {
   teamLists.forEach(list => list.style.display = 'block');
 
   //Ocultar a lista checkbox
-  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda,.fa-regular, .fa-hand-point-left, .fa-bounce');
+  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda,.fa-solid, .fa-hand-point-left, .fa-bounce');
   listaCompleta.forEach(list => list.style.display = 'none');
 
 });

@@ -176,6 +176,7 @@ html {
   font-size: clamp(1em, 1em + 1vw, 1.5em);
   color: black;
   background-color:#70FF72;
+  padding-top: 3%;
 }
 
 #myButton {
@@ -197,8 +198,9 @@ html {
 .botao-com-legenda {
   display: block;
   text-align: center;  
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
-.fa-regular, .fa-hand-point-left, .fa-bounce {
+.fa-solid, .fa-hand-point-left, .fa-bounce {
   font-size: 48px;
 }
 
@@ -208,7 +210,7 @@ html {
   display: flex;
   justify-content: space-between; 
   padding-left: 15%;
-  padding-right: 15%;  
+  padding-right: 15%;    
 }
 
 .botao-com-legenda2 {
@@ -239,7 +241,9 @@ html {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  
 }
+
 
 /* ***Apresentação das listas */
 
