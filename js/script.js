@@ -357,10 +357,11 @@ teamLists.forEach(list => list.style.display = 'none');
 const button = document.querySelector('#myButton');
 button.addEventListener('click', () => {
   
-  //Mostrar as listas de equipes quando o botão é clicado e oculta as equipes.
+  //Mostrar as listas de equipes quando o botão é clicado.
   teamLists.forEach(list => list.style.display = 'block');
+
   //Ocultar a lista checkbox
-  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda');
+  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda,.fa-solid.fa-arrow-pointer.fa-shake');
   listaCompleta.forEach(list => list.style.display = 'none');
 
 });

@@ -181,9 +181,9 @@ html {
 #myButton {
   border: 2px solid black;
   margin: auto;
-  padding: 10px 10px;
+  padding: 20px 10px;
   /* reduzir o preenchimento */
-  display: block;
+  display: inline-block;
   font-size: 30%;
   /* reduzir o tamanho da fonte */
   border-radius: 20px;
@@ -198,6 +198,12 @@ html {
   display: block;
   text-align: center;  
 }
+.fa-solid, .fa-arrow-pointer, .fa-shake {
+  font-size: 48px;
+}
+
+
+
 .go-back {  
   display: flex;
   justify-content: space-between; 
