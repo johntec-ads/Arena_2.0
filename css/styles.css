@@ -198,7 +198,7 @@ html {
   display: block;
   text-align: center;  
 }
-.fa-solid, .fa-arrow-pointer, .fa-shake {
+.fa-regular, .fa-hand-point-left, .fa-bounce {
   font-size: 48px;
 }
 

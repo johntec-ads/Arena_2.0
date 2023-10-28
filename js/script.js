@@ -361,7 +361,7 @@ button.addEventListener('click', () => {
   teamLists.forEach(list => list.style.display = 'block');
 
   //Ocultar a lista checkbox
-  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda,.fa-solid.fa-arrow-pointer.fa-shake');
+  const listaCompleta = document.querySelectorAll('.lista-completa,.lista-presente, #myButton, .legenda,.fa-regular, .fa-hand-point-left, .fa-bounce');
   listaCompleta.forEach(list => list.style.display = 'none');
 
 });
