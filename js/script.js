@@ -100,11 +100,6 @@ let meuArray = ([
     habilidade: 3
   },  
   {
-    nome: "Gabriel",
-    posicao: "MeioAtaque",
-    habilidade: 3
-  },
-  {
     nome: "Lacio",
     posicao: "MeioAtaque",
     habilidade: 3,
