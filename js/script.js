@@ -286,12 +286,7 @@ function html(jogadores) {
       );
       /* concatena para newAtletas as const criadas pelas functions */
       const newAtletas = [...ataqueFiltrado, ...defesaFiltrado, ...meioFiltrado, ...mAfiltrado];
-      console.log(ataqueFiltrado)
-      console.log(defesaFiltrado)
-      console.log(meioFiltrado)
-      console.log(mAfiltrado)
-
-
+      
       /* cria duas arrays vazias */
       const timeAzul = [];
       const timeAmarelo = [];
@@ -305,9 +300,7 @@ function html(jogadores) {
           timeAmarelo.push(jogador);
         }
       });
-      /* console.log(timeAmarelo);
-      console.log(timeAzul); */
-
+      
       /* Function que cria duas lista em html,usando os argumentos de timeAmarelo e timeAzul */
       displayLists(timeAmarelo, timeAzul);
       /* ******************************** */
