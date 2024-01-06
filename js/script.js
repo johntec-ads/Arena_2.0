@@ -98,12 +98,7 @@ let meuArray = ([
     nome: "Herico",
     posicao: "Meio",
     habilidade: 3
-  },
-  {
-    nome: "Guilherme Filho",
-    posicao: "MeioAtaque",
-    habilidade: 3,
-  },
+  },  
   {
     nome: "Gabriel",
     posicao: "MeioAtaque",
@@ -133,12 +128,7 @@ let meuArray = ([
     nome: "Tannuri",
     posicao: "Ataque",
     habilidade: 1
-  },
-  {
-    nome: "Diego",
-    posicao: "Defesa",
-    habilidade: 2
-  },
+  },  
   {
     nome: "Alexandre",
     posicao: "Defesa",
