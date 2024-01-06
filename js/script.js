@@ -58,12 +58,7 @@ let meuArray = ([
     nome: "Paulinho (Victor)",
     posicao: "MeioAtaque",
     habilidade: 3,
-  },
-  {
-    nome: "Piu Piu",
-    posicao: "MeioAtaque",
-    habilidade: 3,
-  },
+  },  
   {
     nome: "João Ramalho",
     posicao: "MeioAtaque",
@@ -149,46 +144,7 @@ let meuArray = ([
     posicao: "Defesa",
     habilidade: 2
   },
-  {
-    nome: "z_Convidado N01",
-    posicao:  "Defesa",
-    habilidade: 1
-  },
-  {
-    nome: "z_Convidado N01",
-    posicao:  "Defesa",
-    habilidade: 1
-  },
-  {
-    nome: "z_Convidado N01",
-    posicao:  "Defesa",
-    habilidade: 1
-  },
-  {
-    nome: "z_Convidado N01",
-    posicao:  "Defesa",
-    habilidade: 1
-  },
-  {
-    nome: "z_Convidado N03",
-    posicao:  "Defesa",
-    habilidade: 3
-  },
-  {
-    nome: "z_Convidado N03",
-    posicao:  "Defesa",
-    habilidade: 3
-  },
-  {
-    nome: "z_Convidado N03",
-    posicao:  "Defesa",
-    habilidade: 3
-  },
-  {
-    nome: "z_Convidado N03",
-    posicao:  "Defesa",
-    habilidade: 3
-  },
+  
 ]);
 
 function marcar() {
