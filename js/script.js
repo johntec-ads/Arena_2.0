@@ -149,6 +149,22 @@ let meuArray = ([
     posicao: "Ataque",
     habilidade: 1
   },
+  {
+    nome: "Xana",
+    posicao: "Ataque",
+    habilidade: 1
+  },
+  {
+    nome: "Rato",
+    posicao: "Defesa",
+    habilidade: 1
+  },
+  {
+    nome: "Kadu",
+    posicao: "Defesa",
+    habilidade: 2
+  },
+
   
 ]);
 
