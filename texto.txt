@@ -1,1 +1,9 @@
-
+0
+: 
+{nome: 'Xana', posicao: 'Ataque', habilidade: 1, marcar: ƒ, desmarcar: ƒ, …}
+1
+: 
+{nome: 'Tannuri', posicao: 'Ataque', habilidade: 1, marcar: ƒ, desmarcar: ƒ, …}
+2
+: 
+{nome: 'Alison', posicao: 'Ataque', habilidade: 1, marcar: ƒ, desmarcar: ƒ, …}
