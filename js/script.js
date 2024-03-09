@@ -439,22 +439,13 @@ function listaPronta ( param ) {
   } )
   return novoArray
 }
-
+//Convertendo em string por nome,posição e habilidade.
 function convertArray (itens) {
   return itens.map(itens => {    
     return `${itens.nome} (${itens.posicao},Habilidade ${itens.habilidade})\n`;
     }).join('');  
 }
-/* // Função para converter o array em uma string formatada
-function converterArrayParaString(arr) {
-  return arr.map(jogador => {
-    return `${jogador.nome} (${jogador.posicao}, Habilidade ${jogador.habilidade})`;
-  }).join(', ');
-} */
-
-
-
+//Aplicando as function ,print no console.lo()
 const numero1 = listaPronta( meuArray );
-
 const numero2 = convertArray( numero1 )
 console.log( numero2 )
