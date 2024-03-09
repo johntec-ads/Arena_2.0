@@ -1,9 +1,32 @@
-0
-: 
-{nome: 'Xana', posicao: 'Ataque', habilidade: 1, marcar: ƒ, desmarcar: ƒ, …}
-1
-: 
-{nome: 'Tannuri', posicao: 'Ataque', habilidade: 1, marcar: ƒ, desmarcar: ƒ, …}
-2
-: 
-{nome: 'Alison', posicao: 'Ataque', habilidade: 1, marcar: ƒ, desmarcar: ƒ, …}
+° Felipe Indiano (Defesa,Habilidade 0)
+° Gustavo Filho (Defesa,Habilidade 0)
+° Allan(Xandão) (Defesa,Habilidade 1)
+° João Vitor (Defesa,Habilidade 1)
+° Leonel (Defesa,Habilidade 1)
+° Odimar (Defesa,Habilidade 1)
+° Rato (Defesa,Habilidade 1)
+° Tomazoni (Defesa,Habilidade 1)
+° Vinicius (Defesa,Habilidade 1)
+° Alexandre (Defesa,Habilidade 2)
+° Dario (Defesa,Habilidade 2)
+° João Frango (Defesa,Habilidade 2)
+° Jonathan (Defesa,Habilidade 2)
+° Kadu (Defesa,Habilidade 2)
+° Edmar (Defesa,Habilidade 3)
+° Miguel (Defesa,Habilidade 3)
+° Antonio (Meio,Habilidade 2)
+° Henderson (Meio,Habilidade 2)
+° Van Helsing (Meio,Habilidade 2)
+° Helio (Meio,Habilidade 3)
+° Herico (Meio,Habilidade 3)
+° John (Meio,Habilidade 3)
+° Japones (Meio,Habilidade 4)
+° Sassi (Meio,Habilidade 4)
+° Alison (Ataque,Habilidade 1)
+° Tannuri (Ataque,Habilidade 1)
+° Xana (Ataque,Habilidade 1)
+° João Ramalho (MeioAtaque,Habilidade 3)
+° Lacio (MeioAtaque,Habilidade 3)
+° Maicon (MeioAtaque,Habilidade 3)
+° Maua (MeioAtaque,Habilidade 3)
+° Paulinho (Victor) (MeioAtaque,Habilidade 3)

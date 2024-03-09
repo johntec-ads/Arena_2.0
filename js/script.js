@@ -37,7 +37,7 @@ let meuArray = ( [
   {
     nome: "Dario",
     posicao: "Defesa",
-    habilidade: 2
+    habilidade: 3
   },
   {
     nome: "Vinicius",
@@ -81,8 +81,8 @@ let meuArray = ( [
   },
   {
     nome: "João Vitor",
-    posicao: "Defesa",
-    habilidade: 1
+    posicao: "Meio",
+    habilidade: 2
   },
   {
     nome: "Odimar",
@@ -102,7 +102,7 @@ let meuArray = ( [
   {
     nome: "Lacio",
     posicao: "MeioAtaque",
-    habilidade: 3,
+    habilidade: 2,
   },
   {
     nome: "Gustavo Filho",
@@ -121,7 +121,7 @@ let meuArray = ( [
   },
   {
     nome: "Alexandre",
-    posicao: "Defesa",
+    posicao: "Meio",
     habilidade: 2
   },
   {
@@ -440,9 +440,19 @@ function listaPronta ( param ) {
   return novoArray
 }
 
-function convertArray ( itens ) {
-  return itens.map( itens => itens.toString()).join( ', ' )
+function convertArray (itens) {
+  return itens.map(itens => {    
+    return `${itens.nome} (${itens.posicao},Habilidade ${itens.habilidade})\n`;
+    }).join('');  
 }
+/* // Função para converter o array em uma string formatada
+function converterArrayParaString(arr) {
+  return arr.map(jogador => {
+    return `${jogador.nome} (${jogador.posicao}, Habilidade ${jogador.habilidade})`;
+  }).join(', ');
+} */
+
+
 
 const numero1 = listaPronta( meuArray );
 
